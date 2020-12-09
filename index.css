@@ -12,6 +12,12 @@ html, body {
     padding: 20px;
     background: #ECF2FF;
     font-size: 30px;
+
+    animation: drop 2s
+}
+
+.animateEmoji {
+    animation: shake 1.2s
 }
 
 #emoji-container {

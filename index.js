@@ -45,12 +45,14 @@ const keyToEmoji = {
 
 box.addEventListener("keydown", function(event) {
     if (event.code in keyToEmoji) {
+        text.classList.add("animateEmoji")
         text.textContent = keyToEmoji[event.code]
-        text2.textContent = ""       
+        text2.textContent = ""
     } 
     else {
+        text.classList.remove("animateEmoji")
         text.textContent = "That answer is not valid"
-        text2.textContent = "Type a number between 1 and 5" 
+        text2.textContent = "Type a number between 1 and 5"
     }
 } )
 
