@@ -21,13 +21,13 @@ const text = document.getElementById("text")
 
 box.addEventListener("focus", function(){
     text.textContent = "Type a number between 1 and 5"
-    text2.textContent = ""
+    text2.textContent = ""    
 })
 
 box.addEventListener("focusout", function(){
     text.textContent = "Click here to give your rating"
+    text2.textContent = ""
 })
-
 
 // Write your code here 👇
 
