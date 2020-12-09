@@ -31,21 +31,21 @@ box.addEventListener("focusout", function(){
 // Write your code here 👇
 
 const keyToEmoji = {
-    53: "😁",
-    12: "😁",
-    52: "🙂",
-    37: "🙂",
-    51: "😐",
-    34: "😐",
-    50: "☹️",
-    40: "☹️",
-    49: "🤬",
-    35: "🤬"
+    Digit5: "😁",
+    Numpad5: "😁",
+    Digit4: "🙂",
+    Numpad4: "🙂",
+    Digit3: "😐",
+    Numpad3: "😐",
+    Digit2: "☹️",
+    Numpad2: "☹️",
+    Digit1: "🤬",
+    Numpad1: "🤬"
 }
 
 box.addEventListener("keydown", function(evt) {
-    if (evt.keyCode in keyToEmoji) {
-        text.textContent = keyToEmoji[evt.keyCode]
+    if (evt.code in keyToEmoji) {
+        text.textContent = keyToEmoji[evt.code]
         text2.textContent = ""       
     } 
     else {
