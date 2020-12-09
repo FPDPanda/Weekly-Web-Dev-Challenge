@@ -32,20 +32,25 @@ box.addEventListener("focusout", function(){
 
 const keyToEmoji = {
     53: "😁",
+    12: "😁",
     52: "🙂",
+    37: "🙂",
     51: "😐",
+    34: "😐",
     50: "☹️",
-    49: "🤬"
+    40: "☹️",
+    49: "🤬",
+    35: "🤬"
 }
 
 box.addEventListener("keydown", function(evt) {
-    if (evt.keyCode < 49 || evt.keyCode > 53) {
-        text.textContent = "That answer is not valid"
-        text2.textContent = "Type a number between 1 and 5"        
+    if (evt.keyCode in keyToEmoji) {
+        text.textContent = keyToEmoji[evt.keyCode]
+        text2.textContent = ""       
     } 
     else {
-        text.textContent = keyToEmoji[evt.keyCode]
-        text2.textContent = ""
+        text.textContent = "That answer is not valid"
+        text2.textContent = "Type a number between 1 and 5" 
     }
 } )
 
