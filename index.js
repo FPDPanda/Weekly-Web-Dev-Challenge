@@ -26,6 +26,7 @@ box.addEventListener("focus", function(){
 box.addEventListener("focusout", function(){
     text.textContent = "Click here to give your rating"
     text2.textContent = ""
+    text.classList.remove("animateEmoji")
 })
 
 // Write your code here 👇
