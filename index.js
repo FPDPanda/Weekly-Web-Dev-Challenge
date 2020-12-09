@@ -43,9 +43,9 @@ const keyToEmoji = {
     Numpad1: "🤬"
 }
 
-box.addEventListener("keydown", function(evt) {
-    if (evt.code in keyToEmoji) {
-        text.textContent = keyToEmoji[evt.code]
+box.addEventListener("keydown", function(event) {
+    if (event.code in keyToEmoji) {
+        text.textContent = keyToEmoji[event.code]
         text2.textContent = ""       
     } 
     else {
